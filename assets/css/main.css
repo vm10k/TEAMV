@@ -10,8 +10,10 @@
 /* Add this CSS to hide the scrollbar in the apps section */
 /* Add this CSS to hide the scrollbar in the apps section */
 #apps {
-    overflow-y: auto; /* This enables vertical scrolling */
-    max-height: 850px; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* This enables vertical scrolling if needed */
+    max-height: 90vh; /* Set maximum height to 70% of viewport height */
+    width: 90%; /* Set width to 90% of the parent container */
+    margin: 0 auto; /* Center the element horizontally */
 }
 
 /* Hide the scrollbar */
@@ -22,15 +24,15 @@
 /* Additional CSS for the rounded buttons */
 .rounded-button {
     display: inline-block;
-    padding: 10px 20px;
-    border-radius: 20px; /* Adjust the value to change the roundness */
+    padding: 3% 5%; /* Use percentages for padding */
+    border-radius: 5%; /* Adjust the value to change the roundness */
     background-color: #000000; /* Black color */
     color: #ffffff; /* White text color */
-    font-size: 16px;
+    font-size: 2vw; /* Responsive font size based on viewport width */
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-right: 10px; /* Add some margin between buttons */
+    margin-right: 2%; /* Use percentages for margin */
 }
 
 .rounded-button:hover {
@@ -38,22 +40,15 @@
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
-    #apps {
-        max-height: 608px; /* Adjust height for smaller screens */
+@media screen and (max-width: 576px) {
+    .rounded-button {
+        padding: 5% 8%; /* Adjust button padding for smaller screens */
+        font-size: 3vw; /* Adjust font size for smaller screens */
+        border-radius: 8%; /* Adjust border radius for smaller screens */
+        margin-right: 5%; /* Adjust margin for smaller screens */
     }
 }
 
-@media screen and (max-width: 576px) {
-    #apps {
-        max-height: 476px; /* Adjust height for even smaller screens */
-    }
-    .rounded-button {
-        padding: 8px 16px; /* Adjust button padding for smaller screens */
-        font-size: 14px; /* Adjust font size for smaller screens */
-        border-radius: 15px; /* Adjust border radius for smaller screens */
-    }
-}
 
 
 
@@ -68,7 +63,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio, video , apps {
 	margin: 0;
 	padding: 0;
 	border: 0;

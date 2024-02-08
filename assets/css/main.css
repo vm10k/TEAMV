@@ -40,13 +40,13 @@
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     #apps {
-        max-height: 300px; /* Adjust height for smaller screens */
+        max-height: 608px; /* Adjust height for smaller screens */
     }
 }
 
 @media screen and (max-width: 576px) {
     #apps {
-        max-height: 200px; /* Adjust height for even smaller screens */
+        max-height: 476px; /* Adjust height for even smaller screens */
     }
     .rounded-button {
         padding: 8px 16px; /* Adjust button padding for smaller screens */

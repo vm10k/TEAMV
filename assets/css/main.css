@@ -38,13 +38,13 @@
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     #apps {
         max-height: 300px; /* Adjust height for smaller screens */
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
     #apps {
         max-height: 200px; /* Adjust height for even smaller screens */
     }

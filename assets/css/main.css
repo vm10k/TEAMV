@@ -8,9 +8,10 @@
 */
 /* Add this CSS to make the apps section scrollable */
 /* Add this CSS to hide the scrollbar in the apps section */
+/* Add this CSS to hide the scrollbar in the apps section */
 #apps {
     overflow-y: auto; /* This enables vertical scrolling */
-    max-height: 1000px; /* Adjust the maximum height as needed */
+    max-height: 850px; /* Adjust the maximum height as needed */
 }
 
 /* Hide the scrollbar */
@@ -35,6 +36,26 @@
 .rounded-button:hover {
     background-color: #333333; /* Darker grey color on hover */
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    #apps {
+        max-height: 300px; /* Adjust height for smaller screens */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #apps {
+        max-height: 200px; /* Adjust height for even smaller screens */
+    }
+    .rounded-button {
+        padding: 8px 16px; /* Adjust button padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+        border-radius: 15px; /* Adjust border radius for smaller screens */
+    }
+}
+
+
 
 
 html, body, div, span, applet, object,
